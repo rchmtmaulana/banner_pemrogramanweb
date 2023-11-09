@@ -37,17 +37,17 @@ export default function Home() {
             <div className="bio-nim-header-banner">
             {/* NIM dan BIO */}
             <p>D121211015</p>
-            <p>Do it to get {duit}</p>
+            <p>Do it to get duit {duit}</p>
           </div>
           </div>
         </div>
         <div className="cta-banner-wrapper">
           {/* tombol cta */}
             <div className='cta-button' onClick={handlerTambahDuit}>
-              <p>Halo!!!</p>
+              <p>Do It</p>
             </div>
             <div className='cta-button' style={{marginTop: '12px'}} onClick={handlerGantiNama}>
-              <p>GantiNama</p>
+              <p>Ganti</p>
             </div>
         </div>
       </div>
