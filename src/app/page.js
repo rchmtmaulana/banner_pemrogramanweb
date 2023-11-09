@@ -1,9 +1,9 @@
 import Image from 'next/image'
-
+import './globals.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className='body'>
       <div className="banner-container">
         {/* kartunya */}
         <div className="header-banner-wrapper">
@@ -13,25 +13,27 @@ export default function Home() {
             <Image
               src="/assets/profile.png"
               alt="Picture of the author"
-              width={200} 
-              height={200} 
+              fill
+              objectFit='contain'
             />
           </div>
           <div className="content-header-banner">
             {/* nama dan kawan2 */}
             <h1>Rachmat Maulana</h1>
-          </div>
-          <div className="bio-nim-header-banner">
+            <div className="bio-nim-header-banner">
             {/* NIM dan BIO */}
             <p>D121211015</p>
             <p>Do it to get duit</p>
           </div>
+          </div>
         </div>
         <div className="cta-banner-wrapper">
           {/* tombol cta */}
-          <button>
-            Halo
-          </button>
+          <a href=''>
+            <div className='cta-button'>
+              <p>Halo!!!</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
